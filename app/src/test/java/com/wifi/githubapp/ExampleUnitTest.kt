@@ -1,8 +1,11 @@
 package com.wifi.githubapp
 
+import com.wifi.githubapp.ui.kotlin.otherwise
+import com.wifi.githubapp.ui.kotlin.yes
 import org.junit.Test
 
 import org.junit.Assert.*
+import java.lang.Math.random
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -11,7 +14,17 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
-    fun addition_isCorrect() {
-        assertEquals(4, 2 + 2)
+    fun test() {
+        /**
+         * 1，
+         */
+        var random = (random() * 10).toInt()
+        var boo = random == 1
+
+        var result = boo.yes {
+            1
+        }.otherwise {
+            2
+        }
     }
 }
