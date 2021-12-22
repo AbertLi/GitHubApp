@@ -41,7 +41,7 @@ inline fun <T> BoolenExt<T>.otherwise(block: () -> T) = when (this) {
 
 fun test() {
     /**
-     * 1，
+     * 1，test
      */
     var random = (Math.random() * 10).toInt()
     var boo = random == 1
@@ -104,24 +104,22 @@ class Preferences<T>(
 }
 
 /**
- * 2
+ * 2，test
  */
 //object AccountSetting {
 //    var email: String by Preferences<String>(AppContext,"email","","LoginSpFile")
 //    var password: String by Preferences<String>(AppContext,"password","","LoginSpFile")
 //}
 
+/**
+ * 3, Properties扩展 kotlin反射。（实现属性代理。用到java反射。）
+ */
+
+
+
+
+
 
 
 fun main() {
-    var random = (Math.random() * 10).toInt()
-    var boo = random == 1
-
-    println("random=$random")
-    var result = boo.yes {
-        1
-    }.otherwise {
-        2
-    }
-    print("result=$result")
 }

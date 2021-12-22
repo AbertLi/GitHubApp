@@ -4,6 +4,6 @@ import com.wifi.githubapp.AppContext
 import com.wifi.githubapp.ui.kotlin.Preferences
 
 object AccountSetting {
-    var email: String by Preferences<String>(AppContext,"email","","LoginSpFile")
-    var password: String by Preferences<String>(AppContext,"password","","LoginSpFile")
+    var email: String by Preferences(AppContext,"email","","LoginSpFile")
+    var password: String by Preferences(AppContext,"password","","LoginSpFile")
 }
