@@ -8,6 +8,7 @@ import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.TextWatcher
+import android.util.Log
 import android.view.View
 import android.view.inputmethod.EditorInfo
 import android.widget.Button
@@ -16,6 +17,8 @@ import android.widget.ProgressBar
 import android.widget.Toast
 
 import com.wifi.githubapp.R
+import com.wifi.mvp.impl.MainFragment
+import com.wifi.mvp.impl.MainPresenter
 
 class LoginActivity : AppCompatActivity() {
 
@@ -25,6 +28,12 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        var mainPresenter= MainPresenter()
+        Log.e("mvp",mainPresenter.toString())
+        Log.e("mvp",mainPresenter.toString())
+        Log.e("mvp",mainPresenter.toString())
+
         username = findViewById<EditText>(R.id.username)
         password = findViewById<EditText>(R.id.password)
         username.setText(AccountSetting.email)

@@ -1,2 +1,4 @@
+include ':mvpJava'
+include ':mvp'
 include ':app'
 rootProject.name = "GitHubApp"

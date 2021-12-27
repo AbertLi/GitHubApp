@@ -11,7 +11,7 @@ import kotlin.reflect.KProperty
 （1）
 1, BoolenExt<out T> 为什么是Out。
 2, sealed 这个关键字在什么时候可以使用。   当可以使用枚举但是又是有可变的枚举中的value的时候就可以使用这个关键字修饰类了。
-3，
+3，Kotlin或者java可以同时实现一个接口和一个抽象类。里面的抽象方法名字是一样的。
 
 
 
