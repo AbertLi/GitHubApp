@@ -46,6 +46,16 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation "com.jakewharton.timber:timber:4.7.1"//日志工具
+    implementation 'com.google.code.gson:gson:2.8.9'//google 的gson
+    //implementation 'com.alibaba:fastjson:1.2.76'//阿里巴巴的fastJson
+
+    api "org.jetbrains.anko:anko-commons:0.10.4"
+    api "org.jetbrains.anko:anko-sdk15:0.10.4"
+    api "org.jetbrains.anko:anko-sdk15-listeners:0.10.4"
+    api "org.jetbrains.anko:anko-appcompat-v7:0.10.4"
+    api "org.jetbrains.anko:anko-appcompat-v7-listeners:0.10.4"
+    api "org.jetbrains.anko:anko-sdk15-coroutines:0.10.4"
 
     implementation project(":mvp")
 

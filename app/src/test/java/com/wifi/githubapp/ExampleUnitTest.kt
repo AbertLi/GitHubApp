@@ -32,4 +32,9 @@ class ExampleUnitTest {
             //println(it.age)
         }
     }
+
+    @Test
+    fun test() {
+
+    }
 }
